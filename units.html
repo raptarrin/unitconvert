@@ -3,53 +3,32 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Astronomical unit convert</title>
-
-
-<style>
-    .container {
-        background: url(http://upload.wikimedia.org/wikipedia/commons/5/52/Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        color: whitesmoke;
-    }
-    .intro {
-        background-color: grey;
-        font-family: -webkit-small-control;
-        color: whitesmoke;
-    }
-    #sidebar {
-        float:right;
-        width:250px;
-        background:#c9c;
-        color: white;
-        padding: 10px;
-    }
-    .footer {
-        background-color: grey;
-        font-family: sans-serif;
-        color: white;
-    }
- </style>
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="jquery.textillate.js"></script>
+    <script type="text/javascript" src="jquery.lettering.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="unitConvert.js"></script>
+
 </head>
 <body>
-<div class="intro"><h1>Intro to Astronomical Units</h1></div>
-
 <div class="container">
-    <div id="sidebar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda, atque beatae consectetur cum doloribus enim est facere illum inventore labore mollitia nostrum odit officia porro possimus qui, quia quibusdam.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci asperiores delectus doloremque officia? Commodi dolorum enim explicabo illo incidunt natus non possimus, quis rem sapiente sed sit veniam. Quisquam!</div>
+<div class="intro"><div id="intro_text" class="hide">Intro to Astronomical Units</div></div>
+
+
+    <h2 class="unittext"><div id="dist" class="hide">Distances</div></h2>
+    
 <form name="converter">
-    Cm: <input type="text" name="cm" onChange="cmConverter()"><br />
-    Inch: <input type="text" name="inch" onChange="inchConverter()"><br />
-    Feet: <input type="text" name="feet" onChange="feetConverter()"><br />
-    Mile: <input type="text" name="mile" onchange="mileConverter()"><br />
-    Km: <input type="text" name="km" onchange="kmConverter()"><br />
-    Light Year <input type="text" name="lightyear" onchange="lightyearConverter()"><br />
-    Parsec <input type="text" name="parsec" onchange="parsecConverter()"><br />
-    <input type="button" value="Convert!" />
-</form></div>
-<div class="footer"><h2>Thank you for reading!</h2></div>
+    <label id="cm1" class="hide">Cm:<input type="text" class="txtbox" name="cm" onChange="cmConverter()"></label><br />
+    <label id="inch2" class="hide">Inch: <input type="text" class="txtbox" name="inch" onChange="inchConverter()"></label><br />
+    <label id="feet3" class="hide">Feet: <input type="text" class="txtbox" name="feet" onChange="feetConverter()"></label><br />
+    <label id="mile4" class="hide">Mile: <input type="text" class="txtbox" name="mile" onchange="mileConverter()"></label><br /></br >
+    <label id="km5" class="hide">Km: <input type="text" class="txtbox" name="km" onchange="kmConverter()"></label><br />
+    <label id="ly" class="hide">Light Year <input type="text" class="txtbox" name="lightyear" onchange="lightyearConverter()"></label><br />
+    <label id="psc" class="hide">Parsec <input type="text" class="txtbox" name="parsec" onchange="parsecConverter()"></label><br />
+    <input type="button" class="btn-style" value="Convert!" />
+</form>
+
+</div>
 
 
 </body>

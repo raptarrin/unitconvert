@@ -1,7 +1,36 @@
 /**
  * Created by L.Ribeiro on 7/8/2014.
  */
+$(window).load(function(){
+    /*$('#intro_text').removeClass('hide').addClass('bounceInDown animated');*/
+    setTimeout(function(){
+    $('#dist').removeClass('hide').addClass('rollIn animated');
+}, 500);
+    setTimeout(function(){
+    $('#cm1').removeClass('hide').addClass('zoomInRight animated');}, 1500)
+    setTimeout(function(){
+    $('#inch2').removeClass('hide').addClass('fadeInRight animated');}, 2000)
+    setTimeout(function(){
+    $('#feet3').removeClass('hide').addClass('rotateIn animated');}, 2500)
+    setTimeout(function(){
+    $('#mile4').removeClass('hide').addClass('swing animated');}, 3000)
+    setTimeout(function(){
+    $('#km5').removeClass('hide').addClass('lightSpeedIn animated');}, 3500)
+    setTimeout(function(){
+    $('#ly').removeClass('hide').addClass('rotateInUpLeft animated');}, 4000)
+    setTimeout(function(){
+    $('#psc').removeClass('hide').addClass('zoomInDown animated');}, 4500)
+});
 
+$(function () {
+    $('#intro_text').textillate();
+});
+
+$("#info-text-container").click(function(){
+    setTimeout(function(){
+       $("#info-text").addClass("info-text-active");
+   }, 500);
+});
 
     function cmConverter(){
     document.converter.inch.value = document.converter.cm.value / 2.54;
