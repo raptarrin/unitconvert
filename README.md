@@ -4,6 +4,7 @@ unitconvert
 Astronomical unit conversion
 
 This project will convert units as small as centimeters, all the way up to light years and parsecs. 
-I also experimented with css animations to make the page a little more interesting. 
 
-Enjoy!
+Uses javascript, animate.css, jQuery. 
+
+Page can be viewed live at http://lilyribeiro.com/unitconvert/units.html
